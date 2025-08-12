@@ -4,8 +4,9 @@
 
 [functions]
   node_bundler = "esbuild"
+  # (Netlify usa Node 18/20 con fetch global. No necesitas dependencias.)
 
-# Ruta bonita para tu API
+# Ruta bonita del frontend -> Function
 [[redirects]]
   from = "/api/chat"
   to = "/.netlify/functions/chat"
